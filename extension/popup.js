@@ -55,7 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const encodedQuery = encodeURIComponent(rawQuery);
-    const groupLabel = rawQuery.slice(0, 2) || rawQuery;
+    const cleaned = rawQuery.trim().replace(/^[\"'“”‘’«»「」『』《》‹›]+/, "");
+    const groupLabel = (Array.from(cleaned).slice(0, 2).join("")) || cleaned || rawQuery;
 
     try {
       const tabs = await Promise.all(
