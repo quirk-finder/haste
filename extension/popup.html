@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Engine Quick Search</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Multi Search</h1>
+      <form id="search-form">
+        <label class="visually-hidden" for="query">Search</label>
+        <input
+          type="text"
+          id="query"
+          name="query"
+          placeholder="Search the web"
+          autofocus
+          required
+        />
+        <button type="submit">Search All</button>
+      </form>
+    </main>
+    <script src="popup.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Multi Engine Quick Search",
+  "version": "1.0.0",
+  "description": "Search multiple engines at once from a single popup form.",
+  "action": {
+    "default_title": "Multi Engine Quick Search",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
